@@ -1,3 +1,11 @@
+# 高效C++无锁队列实现
+
+https://github.com/cameron314/concurrentqueue
+
+Linux kernel里面从来就不缺少简洁，优雅和高效的代码，只是我们缺少发现和品味的眼光。在Linux kernel里面，简洁并不表示代码使用神出鬼没的超然技巧，相反，它使用的不过是大家非常熟悉的基础数据结构，但是kernel开发者能从基础的数据结构中，提炼出优美的特性。
+kfifo就是这样的一类优美代码，它十分简洁，绝无多余的一行代码
+kfifo
+
 # 1.什么是CAS原子操作
 
 在研究无锁之前，我们需要首先了解一下CAS原子操作——Compare & Set，或是 Compare & Swap，现在几乎所image有的CPU指令都支持CAS的原子操作，X86下对应的是 CMPXCHG 汇编指令。
